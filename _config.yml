@@ -1,0 +1,54 @@
+# Site settings
+title: Rio Grande Body Shop
+description: An automotive repair comnpany
+url: "https://justbryan64.github.io/riograndebodyshop/" # Replace with your GitHub Pages URL
+baseurl: "riograndebodyshop" # Leave empty if using username.github.io directly
+author: Bryan R.R
+
+# Build settings
+markdown: kramdown
+remote_theme: mmistakes/minimal-mistakes # Example using a remote theme
+# OR use a gem-based theme:
+# theme: minima
+
+# Theme specific settings (example for minimal-mistakes)
+minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-include-cache # Required for minimal-mistakes
+
+# Social links (example)
+social:
+  github: yourusername
+  twitter: yourhandle
+  linkedin: yourprofile
+
+# Pagination settings
+paginate: 5
+paginate_path: "/blog/page:num/"
+
+# Collections (optional)
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:path/
+
+# Defaults for different content types
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author_profile: true
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "single"
+      author_profile: true
